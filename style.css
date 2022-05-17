@@ -16,6 +16,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 *********************************************************************/
 * {
     box-sizing: border-box;
+    background-color: black;
 }
 
 html, body {
@@ -23,6 +24,61 @@ html, body {
     font-size: 16px;
 }
 
+h3 {
+  color: white
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+p{
+    font-size: 1.2em;
+    transition: all 0.25s ease-in-out;
+    color: white;
+}
+
+p.active{
+    font-size: 1.25em;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .container.image {
+    max-width: 1200px;
+    padding: 0;
+  }
+
+  .collage {
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+  }
+
+  .collage > div{
+      flex-basis: calc(33% - 10px);
+  }
+
+  .item {
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+.container.filter {
+  color:white;
+}
+
+  
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
